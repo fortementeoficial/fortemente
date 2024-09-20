@@ -37,6 +37,7 @@ header h1 {
 
     h2 {
     color: #fff;
+    text-align: justify;
          
      }
 
@@ -263,9 +264,9 @@ footer {
         align-items: center;
     }
 
-        h2 {
+        h2, h3, h4 {
     color: #fff;
-         
+    text-align: justify;         
      }
 
     header h1 {
@@ -285,7 +286,7 @@ footer {
 
     .product-info .buy-button {
         font-size: 14px;
-        padding: 8px 16px;
+        padding: 16px 32px;
     }
 }
 
@@ -293,9 +294,9 @@ footer {
     header h1 {
         font-size: 18px;
     }
-     h2 {
+     h2, h3, h4 {
     color: #fff;
-         
+     text-align: justify;    
      }
 
     .product-info {
@@ -309,6 +310,6 @@ footer {
 
     .product-info .buy-button {
         font-size: 12px;
-        padding: 6px 12px;
+        padding: 12px 24px;
     }
 }
