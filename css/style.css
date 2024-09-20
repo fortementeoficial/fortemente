@@ -69,7 +69,7 @@ header h1 {
     text-align: center;
     color: #a278f4;
     margin-bottom: 30px;
-    text-shadow: 0 0 8px #000;
+    text-shadow: 0 0 5px #000;
 }
 
 .product-info .buy-button {
@@ -266,7 +266,7 @@ footer {
 
         h2, h3, h4 {
     color: #fff;
-    text-align: justify;  
+    text-align: center;  
      font-size: 15px;
      }
 
@@ -293,7 +293,7 @@ footer {
 
     p {
 
-        color: #a278f4;
+       color: #5f34fd;
 }
 
 @media (max-width: 480px) {
@@ -302,7 +302,7 @@ footer {
     }
      h2, h3, h4 {
     color: #fff;
-     text-align: justify; 
+     text-align: center; 
     font-size: 15px
      }
 
@@ -321,5 +321,5 @@ footer {
     }
     p {
 
-        color: #a278f4;
+        color: #5f34fd;
 }
