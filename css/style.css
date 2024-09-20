@@ -35,6 +35,11 @@ header h1 {
     font-size: 24px;
 }
 
+    h2 {
+    color: #fff;
+         
+     }
+
 .product-info {
     display: flex;
     flex-direction: column;
@@ -258,6 +263,11 @@ footer {
         align-items: center;
     }
 
+        h2 {
+    color: #fff;
+         
+     }
+
     header h1 {
         font-size: 20px;
         text-align: center;
@@ -283,6 +293,10 @@ footer {
     header h1 {
         font-size: 18px;
     }
+     h2 {
+    color: #fff;
+         
+     }
 
     .product-info {
         width: 95%;
