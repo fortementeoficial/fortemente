@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ForteMente Produtos</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <img src="img/mini_logo.jpg" alt="Logo" class="logo">
+            <h1 hre>FORTEMENTE</h1>
+
+            <!-- Menu Hambúrguer -->
+            <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+            <ul id="menu-list" class="menu-list">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="pages/index_ebooks.html">E-book</a></li>
+                <li><a href="pages/index_cursos.html">Cursos</a></li>
+                <li><a href="pages/index_livros.html">Livros</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <h2>Produtos mais comprados</h2>
+        <br><br>
+        <div class="product-info">
+            <img src="img/livro.png" alt="Produto" class="product-image">
+            <p class="product-description">Descrição do produto aqui. Inclua detalhes importantes e atraentes para os clientes.</p>
+            <button class="buy-button">Comprar</button>
+        </div>
+
+        <div class="product-info">
+            <img src="img/livro.png" alt="Produto" class="product-image">
+            <p class="product-description">Descrição do produto aqui. Inclua detalhes importantes e atraentes para os clientes.</p>
+            <button class="buy-button">Comprar</button>
+        </div>
+        <br><br>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h4>Sobre Nós</h4>
+                <p>Torne-se um caçador conosco! Aqui você pode acompanhar produtos recomendados pela página.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Contato</h4>
+                <a onclick="window.location.href='mailto:css.dev.1997@gmail.com'">Email</a> | 
+                <a href="https://wa.me/91991762365">Whatsapp</a>
+            </div>
+            <div class="footer-section">
+                <h4>Redes Sociais</h4>
+                <a href="https://www.facebook.com/profile.php?id=100069879731285">Facebook</a> | <a href="https://www.instagram.com/forte_mente100?igsh=ZnF4YjMzdHZmaGI=">Instagram</a> | <a href="https://www.tiktok.com/@fortemente.oficial">TikTok</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const menuList = document.getElementById('menu-list');
+            menuList.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
