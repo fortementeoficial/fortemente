@@ -280,8 +280,9 @@ footer {
     }
 
     .product-info {
-        width: 90%;
+        width: 85%;
         display: flex;
+        padding: 10px:
     }
 
     .product-info .product-image {
