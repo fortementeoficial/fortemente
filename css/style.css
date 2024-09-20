@@ -199,6 +199,7 @@ footer {
 @media (max-width: 480px) {
     footer {
         padding: 15px 0;
+        width: 100%;
         
     }
 
@@ -209,8 +210,7 @@ footer {
 
     .footer-section p, .footer-section a {
         font-size: 10px;
-               width: 100%;
-        margin-bottom: 20px;
+
     }
 }
 /* Estilo responsivo do rodapé para dispositivos móveis */
@@ -224,8 +224,7 @@ footer {
     .footer-section {
         width: 100%;
         margin-bottom: 20px;
-        width: 100%;
-        margin-bottom: 20px;
+
     }
 
     .footer-section h4 {
@@ -240,6 +239,7 @@ footer {
 @media (max-width: 480px) {
     footer {
         padding: 15px 0;
+        width: 100%;
     }
 
     .footer-section h4 {
