@@ -35,7 +35,7 @@ header h1 {
     font-size: 24px;
 }
 
-    h2, h3, h5 {
+    h2, h3 {
     color: #fff;
     text-align: justify;
      font-size: 20px    
@@ -264,7 +264,7 @@ footer {
         align-items: center;
     }
 
-        h2, h3, h5 {
+    h2, h3 {
     color: #fff;
     text-align: center;  
      font-size: 15px;
@@ -297,7 +297,7 @@ footer {
     header h1 {
         font-size: 18px;
     }
-     h2, h3, h5 {
+  h2, h3 {
     color: #fff;
      text-align: center; 
     font-size: 15px
