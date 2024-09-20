@@ -67,7 +67,7 @@ header h1 {
 .product-info .product-description {
     margin: 10px 0;
     text-align: center;
-    color: #5f34fd;
+    color: #a278f4;
     margin-bottom: 30px;
     text-shadow: 0 0 8px #000;
 }
@@ -291,6 +291,11 @@ footer {
     }
 }
 
+    p {
+
+        color: #a278f4;
+}
+
 @media (max-width: 480px) {
     header h1 {
         font-size: 18px;
@@ -314,4 +319,7 @@ footer {
         font-size: 12px;
         padding: 20px 34px;
     }
+    p {
+
+        color: #a278f4;
 }
