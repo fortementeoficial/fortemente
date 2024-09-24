@@ -24,16 +24,111 @@
 <br>
 <br>
 
-<a href=" https://gtar.abit-coin.com/h5/register?proCode=gt_fed793f4el">
-<div class="containerum">
-<img src="img/bee_fund.jpg" alt="Plataforma de investimentos">
-<div class="text">
-<h2>Não é jogo de azar. É investimento!</h2>
-<p>Baixe o aplicativo Bee Fund para acessar criptomoedas em minutos. Construa seu portfólio de criptomoedas com milhões de usuários e ganhe recompensas de
-criptomoedas.</p>
+
+        .slider-container {
+            position: relative;
+            width: 30vw;
+            max-width: 400px;
+            margin: 0 auto;
+        }
+
+        .containerum {
+            display: none; /* Esconde todos os slides inicialmente */
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 30px;
+            backdrop-filter: blur(4px);
+            box-shadow: 2px 2px 5px #00a0fd80;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .containerum:hover {
+            transform: scale(1.1);
+            box-shadow: 0 0 38px #009dff;
+        }
+
+        .containerum img {
+            width: 25%;
+            height: auto;
+            border-radius: 50%;
+        }
+
+        .containerum .text {
+            width: 70%;
+            padding-left: 10px;
+            color: rgb(0, 187, 255);
+        }
+
+        /* Slide ativo */
+        .active {
+            display: flex;
+        }
+
+        .slider-container button {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            border-radius: 50%;
+        }
+
+        .prev {
+            left: -40px;
+        }
+
+        .next {
+            right: -40px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="slider-container">
+    <!-- Slide 1 -->
+    <div class="containerum active">
+        <img src="bee_fund.webp" alt="Plataforma de investimentos">
+        <div class="text">
+            <h2>Não é jogo de azar. É investimento!</h2>
+            <p>Baixe o aplicativo Bee Fund para acessar criptomoedas em minutos. Construa seu portfólio de criptomoedas com milhões de usuários e ganhe recompensas de criptomoedas.</p>
+        </div>
+    </div>
+
+    <!-- Slide 2 -->
+    <div class="containerum">
+        <img src="other_image.webp" alt="Outro Investimento">
+        <div class="text">
+            <h2>Invista de Forma Segura!</h2>
+            <p>Aumente seu portfólio com investimentos sólidos e com suporte garantido. Segurança é nossa prioridade.</p>
+        </div>
+    </div>
+
+    <!-- Botões de navegação -->
+    <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+    <button class="next" onclick="changeSlide(1)">&#10095;</button>
 </div>
-</div>
-</a>
+
+<script>
+    let currentSlide = 0;
+    const slides = document.querySelectorAll('.containerum');
+
+    function changeSlide(direction) {
+        // Esconde o slide atual
+        slides[currentSlide].classList.remove('active');
+        
+        // Calcula o próximo slide
+        currentSlide = (currentSlide + direction + slides.length) % slides.length;
+        
+        // Mostra o próximo slide
+        slides[currentSlide].classList.add('active');
+    }
+</script>
 <br>
 <br>
 <br>
