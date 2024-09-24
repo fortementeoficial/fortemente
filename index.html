@@ -8,102 +8,107 @@
 
 
 <style>
-   .slider {
-            position: relative;
-            width: 80%;
-            max-width: 500px;
-        }
+body {
 
-        .containerum {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            width: 100%; /* O container ocupa todo o espaço */
-            padding: 20px;
-            border: 1px solid #ccc;
-            border-radius: 30px;
-            backdrop-filter: blur(4px);
-            box-shadow: 2px 2px 5px #00a0fd80;
-            background-color: white;
-            text-decoration: none;
-            color: inherit;
-            margin-bottom: 20px;
-            transition: transform 0.3s, box-shadow 0.3s;
-        }
+display: flex;
+justify-content: center;
+}
+.slider {
+position: relative;
+width: 80%;
+max-width: 500px;
+}
 
-        .containerum:hover {
-            transform: scale(1.05);
-            box-shadow: 0 0 38px #009dff;
-        }
+.containerum {
+display: flex;
+align-items: center;
+justify-content: space-between;
+width: 100%; /* O container ocupa todo o espaço */
+padding: 20px;
+border: 1px solid #ccc;
+border-radius: 30px;
+backdrop-filter: blur(4px);
+box-shadow: 2px 2px 5px #00a0fd80;
+background-color: #30303023;
+text-decoration: none;
+color: inherit;
+margin-bottom: 20px;
+transition: transform 0.3s, box-shadow 0.3s;
+}
 
-        .containerum img {
-            width: 25%;
-            height: auto;
-            border-radius: 50%;
-        }
+.containerum:hover {
+transform: scale(1.05);
+box-shadow: 0 0 38px #009dff;
+}
 
-        .containerum .text {
-            width: 70%;
-            padding-left: 10px;
-            color: #009dff;
-        }
+.containerum img {
+width: 25%;
+height: auto;
+border-radius: 50%;
+}
 
-        @media (max-width: 768px) {
-            .containerum {
-                flex-direction: column;
-                text-align: center;
-            }
+.containerum .text {
+width: 70%;
+padding-left: 10px;
+color: #009dff;
+}
 
-            .containerum img {
-                width: 50px;
-            }
+@media (max-width: 768px) {
+.containerum {
+flex-direction: column;
+text-align: center;
+}
 
-            .containerum .text {
-                width: 100%;
-            }
-        }
+.containerum img {
+width: 50px;
+}
 
-        /* Botões de navegação */
-        .prev, .next {
-            cursor: pointer;
-            position: absolute;
-            top: 50%;
-            width: auto;
-            margin-top: -22px;
-            padding: 16px;
-            color: white;
-            font-weight: bold;
-            font-size: 18px;
-            transition: 0.6s ease;
-            border-radius: 0 3px 3px 0;
-        }
+.containerum .text {
+width: 100%;
+}
+}
 
-        .prev {
-            left: 0;
-            border-radius: 3px 0 0 3px;
-        }
+/* Botões de navegação */
+.prev, .next {
+cursor: pointer;
+position: absolute;
+top: 50%;
+width: auto;
+margin-top: -22px;
+padding: 16px;
+color: white;
+font-weight: bold;
+font-size: 18px;
+transition: 0.6s ease;
+border-radius: 0 3px 3px 0;
+}
 
-        .next {
-            right: 0;
-            border-radius: 0 3px 3px 0;
-        }
+.prev {
+left: 0;
+border-radius: 3px 0 0 3px;
+}
 
-        .prev:hover, .next:hover {
-            background-color: rgba(0,0,0,0.8);
-        }
+.next {
+right: 0;
+border-radius: 0 3px 3px 0;
+}
 
-        /* Esconde todos os containers inicialmente */
-        .containerum {
-            display: none;
-        }
+.prev:hover, .next:hover {
+background-color: rgba(0,0,0,0.8);
+}
 
-        /* Mostra o primeiro container */
-        .containerum.active {
-            display: flex;
-        }
-    </style>
+/* Esconde todos os containers inicialmente */
+.containerum {
+display: none;
+}
 
-        
+/* Mostra o primeiro container */
+.containerum.active {
+display: flex;
+}
+</style>
+
+
 </head>
 <body>
 <header>
@@ -126,27 +131,27 @@
 </head>
 
 <div class="slider">
-    <!-- Primeiro Container -->
-    <a href="seu-arquivo-1.pdf" download="seu-arquivo-1.pdf" class="containerum active">
-        <img src="bee_fund.webp" alt="Plataforma de investimentos">
-        <div class="text">
-            <h2>Não é jogo de azar. É investimento!</h2>
-            <p>Baixe o aplicativo Bee Fund para acessar criptomoedas em minutos. Construa seu portfólio de criptomoedas com milhões de usuários e ganhe recompensas de criptomoedas.</p>
-        </div>
-    </a>
+<!-- Primeiro Container -->
+<a href="seu-arquivo-1.pdf" download="seu-arquivo-1.pdf" class="containerum active">
+<img src="bee_fund.webp" alt="Plataforma de investimentos">
+<div class="text">
+<h2>Não é jogo de azar. É investimento!</h2>
+<p>Baixe o aplicativo Bee Fund para acessar criptomoedas em minutos. Construa seu portfólio de criptomoedas com milhões de usuários e ganhe recompensas de criptomoedas.</p>
+</div>
+</a>
 
-    <!-- Segundo Container -->
-    <a href="seu-arquivo-2.pdf" download="seu-arquivo-2.pdf" class="containerum">
-        <img src="investment.webp" alt="Invista com segurança">
-        <div class="text">
-            <h2>Invista com confiança</h2>
-            <p>Aumente seu patrimônio investindo com segurança. Baixe agora o aplicativo Bee Fund e comece a construir seu futuro financeiro.</p>
-        </div>
-    </a>
+<!-- Segundo Container -->
+<a href="seu-arquivo-2.pdf" download="seu-arquivo-2.pdf" class="containerum">
+<img src="investment.webp" alt="Invista com segurança">
+<div class="text">
+<h2>Invista com confiança</h2>
+<p>Aumente seu patrimônio investindo com segurança. Baixe agora o aplicativo Bee Fund e comece a construir seu futuro financeiro.</p>
+</div>
+</a>
 
-    <!-- Botões de Navegação -->
-    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+<!-- Botões de Navegação -->
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
 </div>
 <br>
 <br>
@@ -328,19 +333,31 @@ entender, para que você possa começar a implementar imediatamente as técnicas
 </div>
 </footer>
 <script>
-    let currentSlide = 0;
-    const slides = document.querySelectorAll('.containerum');
+let currentSlide = 0;
+const slides = document.querySelectorAll('.containerum');
 
-    function changeSlide(direction) {
-        // Esconde o slide atual
-        slides[currentSlide].classList.remove('active');
-        
-        // Calcula o próximo slide
-        currentSlide = (currentSlide + direction + slides.length) % slides.length;
-        
-        // Mostra o próximo slide
-        slides[currentSlide].classList.add('active');
-    }
+function showSlides(n) {
+slides.forEach((slide, index) => {
+slide.classList.remove('active');
+if (index === n) {
+slide.classList.add('active');
+}
+});
+}
+
+function plusSlides(n) {
+currentSlide += n;
+if (currentSlide < 0) {
+currentSlide = slides.length - 1;
+}
+if (currentSlide >= slides.length) {
+currentSlide = 0;
+}
+showSlides(currentSlide);
+}
+
+// Mostra o slide inicial
+showSlides(currentSlide);
 </script>
 </body>
 </html>
