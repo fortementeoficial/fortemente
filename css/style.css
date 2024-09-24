@@ -42,6 +42,13 @@ text-align: justify;
 font-size: 20px    
 }
 
+h2 {
+
+justify-content: center;
+margin: 20px
+  
+}
+
 
 
 .containerum {
@@ -116,7 +123,7 @@ border-radius: 10px;
 width: 100%;
 max-width: 600px;
 margin-top: 20px;
-box-shadow: 8px 8px 8px #eaff0089;
+box-shadow: 8px 8px 8px #eaff0068;
 margin-bottom: 50px;
 }
 
