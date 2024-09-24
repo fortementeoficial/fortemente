@@ -1,4 +1,3 @@
-<script>
 let currentSlide = 0;
 const slides = document.querySelectorAll('.containerum');
 
@@ -24,4 +23,4 @@ showSlides(currentSlide);
 
 // Mostra o slide inicial
 showSlides(currentSlide);
-</script>
+
