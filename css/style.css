@@ -46,7 +46,102 @@ h2 {
 
 justify-content: center;
 margin: 20px
-  
+
+}
+
+
+.slider {
+position: relative;
+width: 80%;
+max-width: 500px;
+}
+
+.containerum {
+display: flex;
+align-items: center;
+justify-content: space-between;
+width: 100%; /* O container ocupa todo o espaço */
+padding: 20px;
+border: 1px solid #ccc;
+border-radius: 30px;
+backdrop-filter: blur(4px);
+box-shadow: 2px 2px 5px #00a0fd80;
+background-color: #30303023;
+text-decoration: none;
+color: inherit;
+margin-bottom: 20px;
+transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.containerum:hover {
+transform: scale(1.05);
+box-shadow: 0 0 38px #009dff;
+}
+
+.containerum img {
+width: 25%;
+height: auto;
+border-radius: 50%;
+}
+
+.containerum .text {
+width: 70%;
+padding-left: 10px;
+color: #009dff;
+}
+
+@media (max-width: 768px) {
+.containerum {
+flex-direction: column;
+text-align: center;
+}
+
+.containerum img {
+width: 50px;
+}
+
+.containerum .text {
+width: 100%;
+}
+}
+
+/* Botões de navegação */
+.prev, .next {
+cursor: pointer;
+position: absolute;
+top: 50%;
+width: auto;
+margin-top: -22px;
+padding: 16px;
+color: white;
+font-weight: bold;
+font-size: 18px;
+transition: 0.6s ease;
+border-radius: 0 3px 3px 0;
+}
+
+.prev {
+left: 0;
+border-radius: 3px 0 0 3px;
+}
+
+.next {
+right: 0;
+border-radius: 0 3px 3px 0;
+}
+
+.prev:hover, .next:hover {
+background-color: rgba(0,0,0,0.8);
+}
+
+/* Esconde todos os containers inicialmente */
+.containerum {
+display: none;
+}
+
+/* Mostra o primeiro container */
+.containerum.active {
+display: flex;
 }
 
 
