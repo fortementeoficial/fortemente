@@ -63,7 +63,6 @@ box-shadow: 2px 2px 5px #00a0fd80;
 transform: scale(1.1);
 box-shadow: 0 0 38px #009dff;
 
-
 }
 
 .containerum img {
@@ -83,6 +82,11 @@ color: rgb(0, 187, 255);
 flex-direction: column;
 text-align: center;
 width: 50vw; /* Ajuste o tamanho para telas menores */
+}
+
+.containerum:hover {
+transform: scale(1.1);
+box-shadow: 0 0 38px #009dff;
 }
 
 .containerum img {
@@ -108,7 +112,7 @@ background: rgba(255, 255, 255, 0);
 backdrop-filter: blur(10px);
 padding: 20px;
 border-radius: 10px;
-width: 80%;
+width: 100%;
 max-width: 600px;
 margin-top: 20px;
 box-shadow: 3px 3px 6px #ffd90086;
