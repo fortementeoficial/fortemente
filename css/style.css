@@ -54,6 +54,7 @@ margin: 20px
 position: relative;
 width: 80%;
 max-width: 500px;
+justify-content: center;
 }
 
 .containerum {
