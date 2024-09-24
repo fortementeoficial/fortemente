@@ -23,7 +23,7 @@
 <br>
 <br>
 <br>
-
+<style>
 
         .slider-container {
             position: relative;
@@ -114,21 +114,6 @@
     <button class="next" onclick="changeSlide(1)">&#10095;</button>
 </div>
 
-<script>
-    let currentSlide = 0;
-    const slides = document.querySelectorAll('.containerum');
-
-    function changeSlide(direction) {
-        // Esconde o slide atual
-        slides[currentSlide].classList.remove('active');
-        
-        // Calcula o próximo slide
-        currentSlide = (currentSlide + direction + slides.length) % slides.length;
-        
-        // Mostra o próximo slide
-        slides[currentSlide].classList.add('active');
-    }
-</script>
 <br>
 <br>
 <br>
@@ -308,6 +293,20 @@ entender, para que você possa começar a implementar imediatamente as técnicas
 </div>
 </div>
 </footer>
+<script>
+    let currentSlide = 0;
+    const slides = document.querySelectorAll('.containerum');
 
+    function changeSlide(direction) {
+        // Esconde o slide atual
+        slides[currentSlide].classList.remove('active');
+        
+        // Calcula o próximo slide
+        currentSlide = (currentSlide + direction + slides.length) % slides.length;
+        
+        // Mostra o próximo slide
+        slides[currentSlide].classList.add('active');
+    }
+</script>
 </body>
 </html>
