@@ -32,12 +32,19 @@ height: auto;
 
 .italic {
     font-style: italic;
-    font-size: 18px;
-    color: #fff;
+    font-size: 15px;
+    color: #e6d600;
     display: flex;
     justify-content: center;
 }
 
+.frase {
+    font-style: italic;
+    font-size: 22px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+}
 
 header h1 {
 margin: 0;
@@ -91,7 +98,7 @@ border-radius: 10px;
 width: 100%;
 max-width: 600px;
 margin-top: 20px;
-box-shadow: 8px 8px 8px #eaff0068;
+box-shadow: 8px 8px 10px #e6d7003d;
 margin-bottom: 50px;
 }
 
@@ -99,7 +106,7 @@ margin-bottom: 50px;
 width: 100%;
 max-width: 150px;
 border-radius: 10px;
-box-shadow: -2px -2px 3px #ff8800a1;
+box-shadow: -2px -2px 4px #ffcc0057;
 margin-bottom: 30px;
 }
 
