@@ -30,6 +30,13 @@ width: 50px;
 height: auto;
 }
 
+.italic {
+    font-style: italic;
+    font-size: 18px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+}
 
 
 header h1 {
